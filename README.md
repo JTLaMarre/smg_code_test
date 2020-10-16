@@ -1,1 +1,1 @@
-# smg_code_test
+# react-bootstrap_boiler_plate

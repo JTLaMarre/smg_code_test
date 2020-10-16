@@ -1,0 +1,24 @@
+{
+  "name": "react-bootstrap_boiler_plate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node server.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JTLaMarre/react-bootstrap_boiler_plate.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JTLaMarre/react-bootstrap_boiler_plate/issues"
+  },
+  "homepage": "https://github.com/JTLaMarre/react-bootstrap_boiler_plate#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
