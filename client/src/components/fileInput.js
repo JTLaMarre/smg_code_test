@@ -31,15 +31,13 @@ const File = () => {
             <Row className="justify-content-center">
                 <Col>
                     <input type="file" onChange={handleFile} />
+                    <button className="btn btn-success"onClick={handleUpload}>Upload</button>
                 </Col>
             </Row>
-            <Row className="justify-content-center">
-                <Col>
-                    <button className="btn btn-info"onClick={handleUpload}>Upload</button>
-                </Col>
-            </Row>
+                    
             <Row className="justify-content-center">
         <Col>
+        {/* for now have this set for the file name ultimately this field would display the URI */}
             <input type="text" value={file.name}></input>
         </Col>
             </Row>
