@@ -17,7 +17,12 @@ const File = () => {
     }
     // method of uploading the file
     const handleUpload = () => {
-        Axios.post('')
+        const fd = new FormData();
+        fd.append('image',file,file.name,fd)
+        Axios.post('https://us-central1-smg-test-ad36e.cloudfunctions.net/fileUpload')
+        .then(res=>{
+            console.log(res)
+        })
     }
 
     return (
@@ -30,12 +35,12 @@ const File = () => {
             </Row>
             <Row className="justify-content-center">
                 <Col>
-                    <button className="btn btn-info">Submit</button>
+                    <button className="btn btn-info"onClick={handleUpload}>Upload</button>
                 </Col>
             </Row>
             <Row className="justify-content-center">
         <Col>
-            <input type="text" value={file}></input>
+            <input type="text" value={file.name}></input>
         </Col>
             </Row>
         </div>
