@@ -5,20 +5,26 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start":"node server.js",
+    "start": "node server.js",
+    "server":"nodemon server.js",
     "heroku-postbuild": "cd client && npm install && npm run build"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JTLaMarre/react-bootstrap_boiler_plate.git"
+    "url": "git+https://github.com/JTLaMarre/"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JTLaMarre/react-bootstrap_boiler_plate/issues"
+    "url": "https://github.com/JTLaMarre/"
   },
-  "homepage": "https://github.com/JTLaMarre/react-bootstrap_boiler_plate#readme",
+  "homepage": "https://github.com/JTLaMarre/",
   "dependencies": {
-    "express": "^4.17.1"
+    "concurrently": "^5.3.0",
+    "config": "^3.3.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.10.11",
+    "multer": "^1.4.2",
+    "nodemon": "^2.0.6"
   }
 }

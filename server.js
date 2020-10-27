@@ -1,8 +1,24 @@
 const express = require('express');
 const path = require('path');
+const connectDB = require('./config/db')
+
+
 
 
 const app = express();
+
+
+// connect database
+connectDB();
+
+
+// init middleware
+app.use(express.json({extended:false}))
+
+
+// sends browser that api is working
+app.get('/', (req,res)=>res.send(`API running`))
+
 
 // Serve static files from the React app
 app.use(express.static(path.join(__dirname, 'client/build')));
